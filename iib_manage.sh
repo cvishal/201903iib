@@ -35,7 +35,7 @@ start()
           echo "----------------------------------------" 
           echo "----------------------------------------"
           echo "Starting syslog"
-          sudo /usr/sbin/rsyslogd
+#          sudo /usr/sbin/rsyslogd
           echo "Starting node $NODE_NAME"
           mqsistart $NODE_NAME
           echo "----------------------------------------" 

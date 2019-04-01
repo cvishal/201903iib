@@ -52,7 +52,7 @@ ENV MQSI_MQTT_LOCAL_HOSTNAME=127.0.0.1
 
 # Expose default admin port and http port
 EXPOSE 4414 7800
-#RUN sudo chgrp -R 0 /var/mqsi/ && chmod -R g=u /var/mqsi/
+RUN sudo chgrp -R 0 /var/mqsi/ && chmod -R g=u /var/mqsi/
 
 USER iibuser
 

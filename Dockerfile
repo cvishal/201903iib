@@ -54,7 +54,7 @@ ENV MQSI_MQTT_LOCAL_HOSTNAME=127.0.0.1
 EXPOSE 4414 7800
 
 USER iibuser
-RUN chgrp -R 0 /var/mqsi/ && chmod -R g=u /var/mqsi/
+RUN sudo chgrp -R 0 /var/mqsi/ && chmod -R g=u /var/mqsi/
 
 # Set entrypoint to run management script
 ENTRYPOINT ["iib_manage.sh"]
